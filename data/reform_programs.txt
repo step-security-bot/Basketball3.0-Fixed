@@ -1,0 +1,102 @@
+
+BEGIN Program
+	Name					 BasketballFullCourt1Hr
+	SessionCost				 0
+	Places					 17
+	SessionLength			 60
+	NumSessions				 1
+	Difficulty				 10
+	Research				 MentalHealth
+	Room					 BasketballFullCourt
+	Teacher					 BasketballTrainerFullCourt
+	Intake					 Mandatory
+	EffectChargeRate		 1.0
+	DischargeNeed			 Exercise
+	Properties				 Repeatable
+	Properties				 OutsideOfWork
+END
+
+BEGIN Program
+	Name					 BasketballFullCourt2Hr
+	SessionCost				 0
+	Places					 17
+	SessionLength			 120
+	NumSessions				 1
+	Difficulty				 20
+	Research				 MentalHealth
+	Room					 BasketballFullCourt
+	Teacher					 BasketballTrainerFullCourt
+	EffectChargeRate 		 1.0
+	DischargeNeed			 Exercise
+    Intake					 Mandatory
+	Properties				 Repeatable
+	Properties				 OutsideOfWork
+END
+
+BEGIN Program
+	Name					 BasketballFullCourt3Hr
+	SessionCost				 0
+	Places					 17
+	SessionLength			 180
+	NumSessions				 1
+	Difficulty				 30
+	Research				 MentalHealth
+	Room					 BasketballFullCourt
+	Teacher					 BasketballTrainerFullCourt
+	EffectChargeRate 		 1.0
+	DischargeNeed			 Exercise
+    Intake					 Mandatory
+	Properties				 Repeatable
+	Properties				 OutsideOfWork
+END
+
+BEGIN Program
+	Name					 BasketballHalfCourt1Hr
+	SessionCost				 0
+	Places					 6
+	SessionLength			 60
+	NumSessions				 1
+	Difficulty				 10
+	Research				 MentalHealth
+	Room					 BasketballHalfCourt
+	Teacher					 BasketballTrainerHalfCourt
+	EffectChargeRate 		 1.0
+	DischargeNeed			 Exercise
+    Intake					 Mandatory
+	Properties				 Repeatable
+	Properties				 OutsideOfWork
+END
+
+BEGIN Program
+	Name					 BasketballHalfCourt2Hr
+	SessionCost				 0
+	Places					 6
+	SessionLength			 120
+	NumSessions				 1
+	Difficulty				 20
+	Research				 MentalHealth
+	Room					 BasketballHalfCourt
+	Teacher					 BasketballTrainerHalfCourt
+	EffectChargeRate 		 1.0
+	DischargeNeed			 Exercise
+    Intake					 Mandatory
+	Properties				 Repeatable
+	Properties				 OutsideOfWork
+END
+
+BEGIN Program
+	Name					 BasketballHalfCourt3Hr
+	SessionCost				 0
+	Places					 6
+	SessionLength			 180
+	NumSessions				 1
+	Difficulty				 30
+	Research				 MentalHealth
+	Room					 BasketballHalfCourt
+	Teacher					 BasketballTrainerHalfCourt
+	EffectChargeRate 		 1.0
+	DischargeNeed			 Exercise
+    Intake					 Mandatory
+	Properties				 Repeatable
+	Properties				 OutsideOfWork
+END

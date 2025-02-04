@@ -1,0 +1,772 @@
+
+BEGIN Object     
+    Name                 SmallBench
+    Width                2 
+    Height               1 
+    ConstructionTime     0
+    MoveSpeedFactor      0.500000  
+    Toughness            20.0000
+    Price                -15  
+    NumSlots             2 
+    Group                StaticObject  
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation 
+    MadeOf               Composite   
+    ToolbarSprite        BenchToolbar
+    Properties           StaticObject
+    BEGIN	Sprite		 x 18 y 9 w 4 h 2 RotateType	1
+		BEGIN	Marker	 x 1 y 0 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 3 y 0 orientation.x 0 orientation.y 0 Index 1 END
+	END
+END
+
+BEGIN Object     
+    Name                 BasketballBench
+    Width                2 
+    Height               1 
+    ConstructionTime     0
+    MoveSpeedFactor      0.500000  
+    Toughness            20.0000
+    Price                -15  
+    NumSlots             2 
+    Group                StaticObject  
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation 
+    MadeOf               Composite   
+    ToolbarSprite        BenchToolbar
+    Properties           StaticObject
+    BEGIN	Sprite		 x 18 y 9 w 4 h 2 RotateType	1
+		BEGIN	Marker	 x 1 y 0 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 3 y 0 orientation.x 0 orientation.y 0 Index 1 END
+	END
+END
+
+BEGIN Object
+	Name				 Basket3
+	Width				 1
+	Height				 1
+	RenderDepth			 4
+	MoveSpeedFactor		 0.800000
+	Toughness			 20000.0000
+	Price				 -15
+	MadeOf				 Composite
+	BEGIN	Sprite		 x 20 y 7 w 2 h 2 RotateType 4 END
+	SpriteScale			 0.75
+END
+
+BEGIN Object
+	Name				 BasketballContainer3
+	Width				 1
+	Height				 1
+	ConstructionTime	 0
+	MoveSpeedFactor		 0.500000
+	Toughness			 20000.0000
+	Price				 -15
+	NumSlots			 1
+	Group				 StaticObject
+	BlockedBy			 Wall
+	Properties			 RoomSpecific
+	BlockedBy			 UtilityStation
+	MadeOf				 Composite
+	Properties			 StaticObject
+	BEGIN	Sprite		 x 22 y 7 w 2 h 2 RotateType 2 END
+	WorkGroup			 Basketball
+END
+
+BEGIN Object
+	Name				 BasketballCourtFull
+    ConstructionTime     0
+	Toughness			 20000.0000
+    Price                -500
+	Width				 16
+	Height				 10
+	RenderDepth			 1
+	BlockedBy			 Wall
+	BlockedBy			 UtilityStation
+    MadeOf               Composite
+	Properties			 Scripted
+    Properties           DontAvoid
+	NumSprites			 12
+	BEGIN Sprite		 x 2 y 12 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 11 y 12 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 20 y 12 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 2 y 17 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 11 y 17 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 20 y 17 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 2 y 22 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 11 y 22 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 20 y 22 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 2 y 27 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 11 y 27 w 8 h 5 RotateType 0 END
+	BEGIN Sprite		 x 20 y 27 w 8 h 5 RotateType 0 END
+	ToolbarSprite		 Dummy
+END
+
+BEGIN Object
+	Name				 BasketballCourtHalf
+    ConstructionTime     0
+	Toughness			 20000.0000
+    Price                -250
+	Width				 8
+	Height				 10
+	RenderDepth			 1
+	BlockedBy			 Wall
+	BlockedBy			 UtilityStation
+    MadeOf               Composite
+	Properties			 Scripted
+    Properties           DontAvoid
+	NumSprites			 12
+	BEGIN Sprite		 x 29 y 7 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 29 y 12 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 29 y 17 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 29 y 22 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 29 y 27 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 34 y 7 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 34 y 12 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 34 y 17 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 34 y 22 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 34 y 27 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 34 y 22 w 4 h 5 RotateType 0 END
+	BEGIN Sprite		 x 34 y 27 w 4 h 5 RotateType 0 END
+	ToolbarSprite		 Dummy
+END
+
+BEGIN Object
+	Name				 Basketball3
+	Toughness			 1500000
+	RenderDepth			 3
+	ViewRange			 15
+	BlockedBy			 Wall
+	BlockedBy			 UtilityStation
+	Sprite				 Dummy
+		BEGIN	Marker	 x 0.9 y 1.0 Index 0 END
+	Properties			 Staff
+	Properties			 Entity
+	Properties			 Scripted
+	Properties			 DontAvoid
+	Properties			 DoesNotTire
+	WorkGroup			 Basketball
+	Equipment			 None
+	MoveSpeedFactor		 10
+END
+
+
+
+BEGIN Object
+	Name				 LCDletter
+	Width				 1
+	Height				 1
+	Toughness			 20000.0000
+	RenderDepth			 2
+	NumSprites			 172
+	
+	BEGIN Sprite		 x 1 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 12 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 13 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 15 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 16 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 18 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 19 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 20 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 21 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 22 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 23 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 24 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 25 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 26 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 27 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 12 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 13 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 20 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 24 y 5 w 1 h 1 RotateType 0 END
+	
+	BEGIN Sprite		 x 1 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 12 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 13 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 15 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 16 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 18 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 19 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 20 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 21 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 22 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 23 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 24 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 25 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 26 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 27 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 12 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 13 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 21 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 25 y 5 w 1 h 1 RotateType 0 END
+	
+	BEGIN Sprite		 x 1 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 12 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 13 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 15 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 16 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 18 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 19 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 20 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 21 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 22 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 23 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 24 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 25 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 26 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 27 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 15 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 16 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 22 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 26 y 5 w 1 h 1 RotateType 0 END
+	
+	BEGIN Sprite		 x 1 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 12 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 13 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 15 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 16 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 18 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 19 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 20 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 21 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 22 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 23 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 24 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 25 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 26 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 27 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 15 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 16 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 23 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 27 y 5 w 1 h 1 RotateType 0 END
+	
+	SpriteScale			 0.35
+	MadeOf				 Wood
+	Properties           Sellable
+	Price				 -1
+END
+
+BEGIN Object
+	Name				 LCDcolon
+	Width				 1
+	Height				 1
+	Toughness			 20000.0000
+	RenderDepth			 1
+	NumSprites			 8
+	BEGIN Sprite		 x 20 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 21 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 22 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 23 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 24 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 25 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 26 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 27 y 5 w 1 h 1 RotateType 0 END
+	SpriteScale			 0.35
+	MadeOf				 Wood
+	Properties           Sellable
+	Price				 -1
+END
+
+BEGIN Object
+	Name				 LCDnumber
+	Width				 1
+	Height				 1
+	Toughness			 20000.0000
+	RenderDepth			 1
+	NumSprites			 52
+	
+	BEGIN Sprite		 x 1 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 5 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 1 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 7 w 1 h 1 RotateType 0 END
+	
+	BEGIN Sprite		 x 1 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 6 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 2 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 14 y 8 w 1 h 1 RotateType 0 END
+	
+	BEGIN Sprite		 x 1 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 7 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 3 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 7 w 1 h 1 RotateType 0 END
+	
+	BEGIN Sprite		 x 1 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 2 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 3 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 4 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 5 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 6 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 7 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 8 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 9 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 10 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 11 y 8 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 1 y 4 w 1 h 1 RotateType 0 END
+	BEGIN Sprite		 x 17 y 8 w 1 h 1 RotateType 0 END
+	
+	SpriteScale			 0.35
+	MadeOf				 Wood
+	Properties           Sellable
+	Price				 -1
+END
+
+BEGIN Object
+	Name				 ScoreBoard3
+    ConstructionTime     0
+	Width				 4
+	Height				 1
+	Toughness			 20000.0000
+	RenderDepth			 0
+	NumSprites			 3
+	BEGIN Sprite		 x 12 y 5 w 8 h 2 RotateType 0 END
+	BEGIN Sprite		 x 9 y 9 w 8 h 2 RotateType 0 END
+	BEGIN Sprite		 x 1 y 9 w 8 h 2 RotateType 0 END
+	BEGIN Sprite		 x 28 y 1 w 8 h 2 RotateType 0 END
+	BEGIN Sprite		 x 28 y 3 w 8 h 2 RotateType 0 END
+	SpriteScale			 1.2
+	MadeOf				 Wood
+	Properties			 Scripted
+	Properties           Sellable
+	Price				 -10
+	ToolbarSprite		 Dummy
+	GroundBaseOveride	 1
+END
+
+
+
+BEGIN Room
+    Name                 BasketballFullCourt
+    BEGIN Requirement Type MinimumSize  x 16  y 10  END
+    BEGIN Requirement Type Object Id BasketballCourtFull END
+	BEGIN LikelyObject	 Id		BasketballContainer3	END
+	BEGIN LikelyObject	 Id		Bench	END
+	BEGIN LikelyObject	 Id		BasketballBench	END
+	BEGIN LikelyObject	 Id		DrinkMachine	END
+	WorkGroup			 Basketball
+END
+
+BEGIN Object     
+    Name                 BasketballTrainerFullCourt
+    MoveSpeedFactor      0.100000  
+    Toughness            500.0000
+    RenderDepth          2
+    Price                -500
+    ViewRange            15
+    BlockedBy            Wall
+    BlockedBy            UtilityStation  
+    Sprite               Teacher 
+    SpriteVariants       4
+    Properties           Entity
+	Properties			 Staff
+	WorkGroup			 Basketball
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 BasketballFullCourt
+	Research			 MentalHealth
+END
+
+BEGIN Room
+    Name                 BasketballHalfCourt
+    BEGIN Requirement Type MinimumSize  x 8  y 10  END
+    BEGIN Requirement Type Object Id BasketballCourtHalf END
+	BEGIN LikelyObject	 Id		BasketballContainer3	END
+	BEGIN LikelyObject	 Id		Bench	END
+	BEGIN LikelyObject	 Id		BasketballBench	END
+	BEGIN LikelyObject	 Id		DrinkMachine	END
+	WorkGroup			 Basketball
+END
+
+BEGIN Object     
+    Name                 BasketballTrainerHalfCourt
+    MoveSpeedFactor      0.100000  
+    Toughness            500.0000
+    RenderDepth          2
+    Price                -250
+    ViewRange            15
+    BlockedBy            Wall
+    BlockedBy            UtilityStation  
+    Sprite               Teacher 
+    SpriteVariants       4
+    Properties           Entity
+	Properties			 Staff
+	WorkGroup			 Basketball
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 BasketballHalfCourt
+	Research			 MentalHealth
+END
+
+BEGIN Object     
+    Name                 BasketballTrainerYard
+    MoveSpeedFactor      0.100000  
+    Toughness            500.0000
+    RenderDepth          2
+    Price                -250
+    ViewRange            15
+    BlockedBy            Wall
+    BlockedBy            UtilityStation  
+    Sprite               Teacher 
+    SpriteVariants       4
+    Properties           Entity
+	Properties			 Staff
+	WorkGroup			 Basketball
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Yard
+END
+
+
+
+
+# floor materials
+
+BEGIN Material   
+    Name                 BasketballFloor
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 20  y 4  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballDirt  
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    SpriteType           RandomArea  
+    SpriteOverlayScale   5  
+    NumSprites           2  
+    BEGIN Sprite0    x 5  y 4  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballPavingStone  
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 15  y 4  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballGrass
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       GrassTurf  
+    SpriteType           RandomArea  
+    SpriteOverlayScale   4  
+    NumSprites           2  
+    BEGIN Sprite0    x 0  y 4  END
+    BEGIN Sprite1    x 4  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballLongGrass
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       GrassTurf  
+    SpriteType           RandomArea 
+    SpriteOverlayScale   4
+    NumSprites           2
+    BEGIN Sprite0    x 25  y 6  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballMud
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       GrassTurf  
+    SpriteType           RandomArea  
+    SpriteOverlayScale   4
+    NumSprites           2
+    BEGIN Sprite0    x 25  y 8  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballRoad 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 15  y 6  END
+    BEGIN Sprite1    x 2  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballStone 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           AlignedArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 25  y 4  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballConcreteTiles 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 10  y 6  END
+    BEGIN Sprite1    x 2  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballConcreteFloor 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 20  y 6  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballWoodenFloor
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Brick  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 0  y 6  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballWoodLaminate  
+    ConstructionTime     1.00000  
+    Price                -20
+    MoveCost			 2.000000
+    SoftEdged            -1  
+    IndoorOutdoor        2  
+    ObjectRequired       Brick 
+    NumSprites           2   
+    BEGIN Sprite0    x 21  y 10  END
+    BEGIN Sprite1    x 21  y 11  END
+END
+
+BEGIN Material   
+    Name                 BasketballCeramicFloor 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Brick  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 5  y 6  END
+    BEGIN Sprite1    x 4  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballMosaicFloor 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 10  y 4  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballMetalFloor
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           RandomArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 15  y 8  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballSand
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    SpriteOverlayScale   5
+    SpriteType           RandomArea
+    NumSprites           2  
+    BEGIN Sprite0    x 15  y 10  END
+    BEGIN Sprite1    x 5  y 2  END
+END
+
+BEGIN Material   
+    Name                 BasketballMarbleTiles  
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    BEGIN Sprite0    x 22  y 8  END
+END
+
+BEGIN Material   
+    Name                 BasketballWhiteTiles 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    BEGIN Sprite0    x 22  y 9  END
+END
+
+BEGIN Material   
+    Name                 BasketballFancyTiles 
+    ConstructionTime     -1
+    MoveCost             2.000000  
+    SoftEdged            -1  
+    ObjectRequired       Concrete  
+    SpriteType           AlignedArea  
+    NumSprites           2  
+    BEGIN Sprite0    x 20  y 8  END
+    BEGIN Sprite1    x 2  y 2  END
+END

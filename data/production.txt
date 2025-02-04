@@ -1,0 +1,20 @@
+
+BEGIN ProductionRule
+	Rule			 Storage
+	Material		 Basketball3
+	Container		 BasketballContainer3
+	Distribution	 Nearest
+	MinSlotId		 0
+	Properties		 HighPriority
+	Condition		 EntityDead
+	Worker			 BasketballTrainerFullCourt
+	Worker			 BasketballTrainerHalfCourt
+	Worker			 BasketballTrainerYard
+	Worker			 Janitor
+	Worker			 Workman
+	Worker			 Cook
+	Worker			 Gardener
+	Worker			 Prisoner
+	Worker			 Guard
+	WorkGroup		 Basketball
+END

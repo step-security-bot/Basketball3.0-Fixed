@@ -1,0 +1,156 @@
+
+object_SmallBench									 	 Small Bench
+buildtoolbar_popup_obj_SmallBench					 	 A small bench for prisoners anywhere in the prison.
+
+object_BasketballBench									 Basketball Bench
+buildtoolbar_popup_obj_BasketballBench					 A small bench for prisoners who want to watch a basketball game.
+action_WatchBasketball									 Watching basketball game
+
+object_BasketballContainer3								 Basketball Container
+buildtoolbar_popup_obj_BasketballContainer3				 Belongs to Basketball 3.0\nIf you set the ball to be killed after a match, it will be stored into this Basketball Container.\n\nIt's possible to place the Basketball Container anywhere in the prison, but of course it belongs nearby a Basketball Court or Half Court.
+
+object_Basket3											 Basket
+
+object_BasketballCourtFull								 Basketball Court
+buildtoolbar_popup_obj_BasketballCourtFull				 Belongs to Basketball 3.0\nCome on and slam and welcome to the jam!\nClick my buttons to configure the game.
+
+object_BasketballCourtHalf								 Basketball Half Court
+buildtoolbar_popup_obj_BasketballCourtHalf				 Belongs to Basketball 3.0\nCome on and slam and welcome to the jam!\nClick my buttons to configure the game.
+
+object_LCDletter										 LCD
+object_LCDcolon											 LCD
+object_LCDnumber										 LCD
+
+tooltip_scoreboardconfig								 =SCOREBOARD=
+tooltip_button_toggleFindScoreboard						 Find board
+tooltip_button_toggleScoreboardcolour					 Border: *X
+tooltip_button_toggleLCDtextcolour						 Text : *X
+tooltip_button_toggleLCDscorecolour						 Score: *X
+tooltip_button_toggleLCDclockcolour						 Clock: *X
+tooltip_button_toggleLCDShowClock						 Toggle clock
+tooltip_button_toggleLCDShowSeconds						 Seconds: *X
+
+tooltip_button_showseconds0								 off
+tooltip_button_showseconds1								 on
+
+tooltip_button_boardcolour0								 grey
+tooltip_button_boardcolour1								 blue
+tooltip_button_boardcolour2								 brown
+tooltip_button_boardcolour3								 white
+tooltip_button_boardcolour4								 red
+
+tooltip_button_textcolour0								 red
+tooltip_button_textcolour43								 cyan
+tooltip_button_textcolour86								 yellow
+tooltip_button_textcolour129							 green
+
+tooltip_button_scorecolour0								 red
+tooltip_button_scorecolour13							 cyan
+tooltip_button_scorecolour26							 yellow
+tooltip_button_scorecolour39							 green
+
+tooltip_button_clockcolour0								 red
+tooltip_button_clockcolour43							 cyan
+tooltip_button_clockcolour86							 yellow
+tooltip_button_clockcolour129							 green
+
+
+object_ScoreBoard3										 Score Board 3.0
+buildtoolbar_popup_obj_ScoreBoard3						 Belongs to Basketball 3.0\n\nYou can easily SELL a Score Board. It's optional, but\nwhen used it must be within 15 tiles of the Court.\n\nNo wiring required, it goes on WiFi automatically:\n - sell existing and build new Score Board\n - when done building, press FIND BOARD to verify if the\n   Score Board shows the Court ID of the linked court.\n\nIf you have nearby courts and Score Boards are linked wrong:\n - turn GAME OFF at all courts and sell all Score Boards,\n - place 1 Score Board at a court and turn that GAME ON,\n - place next Score Board, turn game on, and so on...
+
+object_Basketball3										 Basketball 3.0
+
+object_BasketballTrainerFullCourt						 Basketball Trainer (Full court)
+buildtoolbar_popup_staff_BasketballTrainerFullCourt		 Belongs to Basketball 3.0\nThis Basketball Trainer hangs out on a Basketball Court.
+
+object_BasketballTrainerHalfCourt						 Basketball Trainer (Half Court)
+buildtoolbar_popup_staff_BasketballTrainerHalfCourt		 Belongs to Basketball 3.0\nThis Basketball Trainer hangs out on a Basketball Half Court.
+
+object_BasketballTrainerYard							 Basketball Trainer (Yard)
+buildtoolbar_popup_staff_BasketballTrainerYard			 Belongs to Basketball 3.0\nThis Basketball Trainer hangs out on a Yard.
+
+room_BasketballFullCourt								 Basketball Court
+buildtoolbar_popup_room_BasketballFullCourt				 Belongs to Basketball 3.0\nThis is a FULL COURT where up to 17 prisoners will be playing.\n\nONLY zone the Basketball Court itself (16x10 tiles),\nNOT the surrounding tiled border!\n\nThe surrounding area should be a Yard or Common Room with Basketball Benches, so people can sit down and watch a game to settle Recreation and Comfort needs.\n\nAlternate set up\nYou can also zone the basketball court as an actual Yard and hire a Basketball Trainer (Yard) instead. Just be sure the Yard is only zoned within the court lines. This results in prisoners playing a game during Yard time without a reform program. When you station Guards in the Yard they will also play.
+
+room_BasketballHalfCourt								 Basketball Half Court
+buildtoolbar_popup_room_BasketballHalfCourt				 Belongs to Basketball 3.0\nThis is a HALF-COURT where up to 6 prisoners will be playing.\n\nONLY zone the Basketball Half Court itself (8x10 tiles),\nNOT the surrounding tiled border!\n\nThe surrounding area should be a Yard or Common Room with Basketball Benches, so people can sit down and watch a game to settle Recreation and Comfort needs.\n\nAlternate set up\nYou can also zone the basketball court as an actual Yard and hire a Basketball Trainer (Yard) instead. Just be sure the Yard is only zoned within the court lines. This results in prisoners playing a game during Yard time without a reform program. When you station Guards in the Yard they will also play.
+
+reformprogram_BasketBallFullCourt1Hr					 Prison Basketball FullCourt (1 hour)
+reformprogram_BasketballFullCourt1Hr_text				 Belongs to Basketball 3.0\nA good way to burn some of your inmates extra energy to keep them distracted. Holds up to 17 places.\n\nSuitable for small prisons where attendees can reach the court quickly.\n\nIt requires a minimum of 4 players attending this program to start a real-time basketball game.
+reformprogram_BasketBallHalfCourt1Hr					 Prison Basketball HalfCourt (1 hour)
+reformprogram_BasketballHalfCourt1Hr_text				 Belongs to Basketball 3.0\nA good way to burn some of your inmates extra energy to keep them distracted. Holds up to 6 places.\n\nSuitable for small prisons where attendees can reach the court quickly.\n\nIt requires a minimum of 2 players attending this program to start a real-time basketball game.
+
+reformprogram_BasketBallFullCourt2Hr					 Prison Basketball FullCourt (2 hours)
+reformprogram_BasketballFullCourt2Hr_text				 Belongs to Basketball 3.0\nA good way to burn some of your inmates extra energy to keep them distracted. Holds up to 17 places.\n\nSuitable for medium prisons where attendees need some time to reach the court.\n\nIt requires a minimum of 4 players attending this program to start a real-time basketball game.
+reformprogram_BasketBallHalfCourt2Hr					 Prison Basketball HalfCourt (2 hours)
+reformprogram_BasketballHalfCourt2Hr_text				 Belongs to Basketball 3.0\nA good way to burn some of your inmates extra energy to keep them distracted. Holds up to 6 places.\n\nSuitable for medium prisons where attendees need some time to reach the court.\n\nIt requires a minimum of 2 players attending this program to start a real-time basketball game.
+
+reformprogram_BasketBallFullCourt3Hr					 Prison Basketball FullCourt (3 hours)
+reformprogram_BasketballFullCourt3Hr_text				 Belongs to Basketball 3.0\nA good way to burn some of your inmates extra energy to keep them distracted. Holds up to 17 places.\n\nSuitable for large prisons where attendees need a lot of time to reach the court.\n\nIt requires a minimum of 4 players attending this program to start a real-time basketball game.
+reformprogram_BasketBallHalfCourt3Hr					 Prison Basketball HalfCourt (3 hours)
+reformprogram_BasketballHalfCourt3Hr_text				 Belongs to Basketball 3.0\nA good way to burn some of your inmates extra energy to keep them distracted. Holds up to 6 places.\n\nSuitable for large prisons where attendees need a lot of time to reach the court.\n\nIt requires a minimum of 2 players attending this program to start a real-time basketball game.
+
+material_BasketballConcretefloor						 Basketball ConcreteFloor
+material_BasketballFloor								 Basketball Gravel
+material_BasketballDirt									 Basketball Dirt
+material_BasketballPavingStone							 Basketball Paving Stone
+material_BasketballGrass								 Basketball Grass
+material_BasketballLongGrass							 Basketball Long Grass
+material_BasketballMud									 Basketball Mud
+material_BasketballRoad									 Basketball Road
+material_BasketballStone								 Basketball Stone
+material_BasketballConcreteTiles						 Basketball ConcreteTiles
+material_BasketballWoodenFloor							 Basketball WoodenFloor
+material_BasketballWoodLaminate							 BasketBall LaminateFloor
+material_BasketballCeramicFloor							 Basketball Ceramic Floor
+material_BasketballMosaicFloor							 Basketball Mosaic Floor
+material_BasketballMetalFloor							 Basketball Metal Floor
+material_BasketballSand									 Basketball Sand
+material_BasketballMarbleTiles							 Basketball Marble Tiles
+material_BasketballWhiteTiles							 Basketball White Tiles
+material_BasketballFancyTiles							 Basketball Fancy Tiles
+
+tooltip_button_floortype								 Floor: *X
+tooltip_button_linetype									 Line type: *X
+tooltip_button_game										 GAME: *X
+tooltip_button_courtlights								 Court lights: *X
+tooltip_button_debuginfo								 Debug info: *X
+tooltip_button_balldelkill								 Ball gets: *X
+tooltip_del												 deleted
+tooltip_kill											 killed
+tooltip_on												 ON
+tooltip_off												 OFF
+tooltip_button_delete									 Delete court
+
+tooltip_BasketballConcretefloor							 Concrete
+tooltip_BasketballFloor									 Gravel
+tooltip_BasketballDirt									 Dirt
+tooltip_BasketballPavingStone							 Paving Stone
+tooltip_BasketballGrass									 Grass
+tooltip_BasketballLongGrass								 Long Grass
+tooltip_BasketballMud									 Mud
+tooltip_BasketballRoad									 Road
+tooltip_BasketballStone									 Stone
+tooltip_BasketballConcreteTiles							 Tiles
+tooltip_BasketballWoodenFloor							 Wood
+tooltip_BasketballWoodLaminate							 Laminate
+tooltip_BasketballCeramicFloor							 Ceramic
+tooltip_BasketballMosaicFloor							 Mosaic
+tooltip_BasketballMetalFloor							 Metal
+tooltip_BasketballSand									 Sand
+tooltip_BasketballMarbleTiles							 Marble
+tooltip_BasketballWhiteTiles							 White
+tooltip_BasketballFancyTiles							 Fancy
+
+tooltip_courtconfig										 === COURT ===
+tooltip_linkedto										 Court ID: *X
+tooltip_linkscoreboard									 Court ID: *X\n\nYou can easily SELL the Score Board. It's optional, but\nwhen used it must be within 15 tiles of the Centre Circle.\n\nNo wiring required, it goes on WiFi automatically:\n - turn GAME OFF, sell existing and build new Score Board\n - when done building, press GAME ON to verify if the\n   Score Board shows the Court ID of the linked court.\n\nIf you have nearby courts and Score Boards are linked wrong:\n - turn GAME OFF at all courts and sell all Score Boards,\n - place 1 Score Board at a court and turn that GAME ON,\n - place next Score Board, turn game on, and so on...
+tooltip_playersfoundandrequired							 Court ID: *X\n\nGAME ON - slam and welcome to the jam!\nClick my buttons to configure the game.\n*Y players found on court (*Z required).
+tooltip_welcometoslam									 Court ID: *X\n\nGAME OFF - slam and welcome to the jam!\nClick my buttons to configure the game.
+tooltip_fullcourtwelcome								 Court ID: *X\n\nGAME ON - slam and welcome to the jam!\nClick my buttons to configure the game.\n\nThe court wakes up when 4 prisoners want to play.
+tooltip_halfcourtwelcome								 Court ID: *X\n\nGAME ON - slam and welcome to the jam!\nClick my buttons to configure the game.\n\nThe court wakes up when 2 prisoners want to play.
+tooltip_deepsleep										 Court ID: *X\n\nGAME OFF - slam and welcome to the jam!\nClick my buttons to configure the game.\n\nDeep Sleep mode enabled.
+tooltip_sleepmode										 Court ID: *X\n\nGAME ON - slam and welcome to the jam!\nClick my buttons to configure the game.\n\nNormal Sleep mode enabled, waiting for players.
+tooltip_gettingready									 Court ID: *X\n\nGAME ON - slam and welcome to the jam!\nClick my buttons to configure the game.\n\nGetting ready for action.
+tooltip_fullcourtBasket									 Court ID: *X\n\nGAME ON - slam and welcome to the jam!\nClick my buttons to configure the game.\n\nGOAL!       Score *Y - *Z
+tooltip_halfcourtBasket									 Court ID: *X\n\nGAME ON - slam and welcome to the jam!\nClick my buttons to configure the game.\n\nGOAL!       Score *Y

@@ -1,0 +1,44 @@
+
+BEGIN Provider
+	Action					WatchBasketball
+	ProviderType			Object
+	Object					BasketballBench
+	PrimaryNeed				StaffRecreation
+	PrimaryRate				-0.30000
+	SecondaryNeed			StaffComfort
+	SecondaryRate			-0.30000
+	ActionType				Use
+	Slot					0
+END
+
+BEGIN Provider
+	Action					WatchBasketball
+	ProviderType			Object
+	Object					BasketballBench
+	PrimaryNeed				StaffRecreation
+	PrimaryRate				-0.30000
+	SecondaryNeed			StaffComfort
+	SecondaryRate			-0.30000
+	ActionType				Use
+	Slot					1
+END
+
+BEGIN Provider
+	Action					 Sit
+	ProviderType			 Object
+	Object					 SmallBench
+	Slot					 0
+	PrimaryNeed				 StaffComfort
+	PrimaryRate				 -0.300000
+	ActionType				 Use
+END
+
+BEGIN Provider
+	Action					 Sit
+	ProviderType			 Object
+	Object					 SmallBench
+	Slot					 1
+	PrimaryNeed				 StaffComfort
+	PrimaryRate				 -0.300000
+	ActionType				 Use
+END
