@@ -18,6 +18,7 @@ updates:
       - dependency-type: "all"
     labels:
       - "github-actions"
+    automerge: true
     groups:
       github-actions:
         applies-to: version-updates
