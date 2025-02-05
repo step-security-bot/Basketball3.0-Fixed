@@ -76,6 +76,6 @@ jobs:
       - name: Merge Pull Request
         if: github.actor == 'Nick2bad4u'
         run: |
-          gh pr merge -R "Nick2bad4u/UserStyles" --squash --auto "${{ env.PR_NUMBER }}"
+          gh pr merge -R "Nick2bad4u/Basketball3.0-Fixed" --squash --auto "${{ env.PR_NUMBER }}"
         env:
           GH_TOKEN: ${{ secrets.TOKEN }}
