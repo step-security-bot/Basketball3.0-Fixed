@@ -1,0 +1,14 @@
+remote_theme: pages-themes/hacker@v0.2.0
+title: Prison Architect Mods
+description: Prison Architect Mod made by Typpi
+url: "https://basketball.typpi.online" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-language-plugin
+  - jekyll-algolia
+  - jekyll-mentions
+  - jekyll-admin
